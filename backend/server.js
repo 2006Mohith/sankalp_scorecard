@@ -87,6 +87,6 @@ mongoose.connect(MONGO_URI)
         server.keepAliveTimeout = 65000; // 65 seconds
         server.headersTimeout = 66000;   // Keep strictly larger than keepAliveTimeout
 
-        server.listen(PORT, () => console.log(`Server running - Shield Active on port ${PORT}`));
+        server.listen(PORT, '0.0.0.0', () => console.log(`Server running - Shield Active on port ${PORT}`));
     })
     .catch(err => console.error('MongoDB connection error:', err));
