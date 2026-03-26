@@ -5,5 +5,17 @@ export default defineConfig({
     plugins: [react()],
     server: {
         host: '0.0.0.0'
+    },
+    build: {
+        chunkSizeWarningLimit: 1000,
+        rollupOptions: {
+            output: {
+                manualChunks: {
+                    vendor: ['react', 'react-dom', 'react-router-dom'],
+                    framer: ['framer-motion'],
+                    matter: ['matter-js']
+                }
+            }
+        }
     }
 })
