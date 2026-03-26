@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { motion } from 'framer-motion';
 import { Users, Trophy, Play, ChevronRight, Activity, Target, Zap, ChevronDown } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
@@ -53,6 +54,10 @@ const HomePage = () => {
 
     return (
         <div className="relative pb-24 -mt-8">
+            <SEO 
+                title="SANKALP Sports Club | KMCE Official Esports & Athletics" 
+                description="Welcome to SANKALP. The definitive ecosystem for athletic dominance at KMCE. We are building the ultimate competitive platform for emerging student-athletes." 
+            />
             {/* Background Animations */}
             <div className="fixed inset-0 pointer-events-none -z-10 bg-grid-pattern opacity-30"></div>
             <div className="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary-500/10 rounded-full blur-[120px] mix-blend-screen animate-blob"></div>

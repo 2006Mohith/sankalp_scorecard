@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { motion } from 'framer-motion';
 import { Users, Trophy, ChevronRight, Activity, ArrowLeft } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
@@ -47,6 +48,10 @@ const ScoreboardPage = () => {
 
     return (
         <div className="relative pt-8 pb-24 overflow-hidden min-h-[80vh]">
+            <SEO 
+                title="Live Scoreboards | SANKALP Sports Club" 
+                description="View live scoreboards, match brackets, and action across all SANKALP sports events in real-time." 
+            />
             {/* Background Animations */}
             <div className="fixed inset-0 pointer-events-none -z-10 bg-grid-pattern opacity-30"></div>
             <div className="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary-500/10 rounded-full blur-[120px] mix-blend-screen animate-blob"></div>
