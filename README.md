@@ -1,6 +1,7 @@
 # KESHAV MEMORIAL COLLEGE OF ENGINEERING – SANKALP Sports Fest Live Scoreboard
 
 A full-stack web application designed for the official sports fest conducted by KESHAV MEMORIAL COLLEGE OF ENGINEERING under the club SANKALP.
+🔗 Live Demo: [https://sankalp-scorecard.vercel.app/]
 
 ## Features
 - **Public Website:** Live scores, upcoming and completed match tracking.
